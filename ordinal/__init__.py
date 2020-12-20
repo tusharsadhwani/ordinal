@@ -3,6 +3,9 @@
 
 def ordinal(num: int) -> str:
     """Converts a number into an ordinal string"""
+    if num < 0:
+        raise ValueError('Cannot convert negative numbers to ordinals')
+
     # special cases
     if num % 100 in (11, 12, 13):
         return f'{num}th'

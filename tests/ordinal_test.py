@@ -16,6 +16,18 @@ import ordinal
         (213, '213th'),
     )
 )
-def test_ordinals(num: int, expected: str) -> None:
+def test_ordinal(num: int, expected: str) -> None:
     """Ordinal tests"""
     assert ordinal.ordinal(num) == expected
+
+
+@pytest.mark.parametrize(
+    'num',
+    (
+        (-1),
+        (-314),
+    )
+)
+def test_ordinal_failure(num: int) -> None:
+    with pytest.raises(ValueError):
+        ordinal.ordinal(num)
