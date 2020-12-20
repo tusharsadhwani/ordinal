@@ -13,5 +13,6 @@ print(num) # 42nd
 Clone the app and run the following:
 
 ```console
+pip install -e .
 python setup.py pytest
 ```
