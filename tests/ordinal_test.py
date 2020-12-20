@@ -12,7 +12,8 @@ import ordinal
         (11, '11th'),
         (13, '13th'),
         (1523, '1523rd'),
-        (87, '87th')
+        (87, '87th'),
+        (213, '213th'),
     )
 )
 def test_ordinals(num: int, expected: str) -> None:

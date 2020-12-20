@@ -4,7 +4,7 @@
 def ordinal(num: int) -> str:
     """Converts a number into an ordinal string"""
     # special cases
-    if num in (11, 12, 13):
+    if num % 100 in (11, 12, 13):
         return f'{num}th'
 
     last_digit = num % 10
