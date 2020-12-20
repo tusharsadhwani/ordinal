@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="ordinal",
-    version="1.0.0",
+    version="1.0.1",
     author="Tushar Sadhwani",
     author_email="tushar.sadhwani000@gmail.com",
     description="Get ordinals from numbers (42 -> 42nd).",
