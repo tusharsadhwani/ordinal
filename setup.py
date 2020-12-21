@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="ordinal",
-    version="1.0.2",
+    version="1.0.3",
     author="Tushar Sadhwani",
     author_email="tushar.sadhwani000@gmail.com",
     description="Get ordinals from numbers (42 -> 42nd).",
@@ -20,6 +20,4 @@ setuptools.setup(
     ],
     python_requires='>=3.6',
     install_requires=['pytest'],
-    setup_requires=['pytest-runner'],
-    tests_require=['pytest'],
 )
